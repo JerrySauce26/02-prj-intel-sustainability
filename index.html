@@ -34,6 +34,28 @@
       The .card-section container uses CSS to show only 4 cards at a time on desktop.
       You can scroll horizontally to see more cards.
     -->
+    <style>
+      .scroll-container {
+        display: fle;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 1rem 0;
+      }
+      .scroll-container::-webkit-scrollbar {
+        height: 8px;
+      }
+      .scroll-container::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 4px;
+      }
+      .scroll-container::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      .card {
+        min-width: 250px;
+        flex: 0 0 auto;
+      }
+    </style>
     <section class="card-section">
       <!-- Card 1: 1968 -->
       <section class="card">
